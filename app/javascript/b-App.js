@@ -1,7 +1,7 @@
 import React from 'react';
-import Community from './Community.js';
+import Community from './c-Community.js';
 import Score from './Score.js';
-import Menu from './w-Menu.js';
+import Menu from './z-Menu.js';
 
 
 
