@@ -6,12 +6,22 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export default function Community() {
+  
+  return (
+    <div>
+      <Depending />
+      <Player />
+    </div>
+  );
+}
+
+function Depending() {
   const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
     setAge(event.target.value);
   };
-  
+
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
@@ -29,12 +39,6 @@ export default function Community() {
         </Select>
       </FormControl>
     </Box>
-  );
-}
-
-function Depending() {
-  return (
-    <h3>Depending</h3>
   );
 }
 function Player() {
