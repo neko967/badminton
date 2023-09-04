@@ -16,7 +16,6 @@ export default function App() {
         <Container maxWidth="sm">
           <Community />
           <Score />
-          <Speek />
           <Court />
           <Menu />
         </Container>
