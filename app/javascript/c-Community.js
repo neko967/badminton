@@ -21,7 +21,7 @@ export default function Community() {
     <div>
       <Depending />
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid xs={3}>
             <Item>xs=3</Item>
           </Grid>
