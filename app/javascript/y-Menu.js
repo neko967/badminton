@@ -27,19 +27,6 @@ export default function Menu() {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
-          <Grid xs={4}>
-            <Item>xs=4</Item>
-          </Grid>
-          <Grid xs={4}>
-            <Item>xs=4</Item>
-          </Grid>
-          <Grid xs={4}>
-            <Item>xs=4</Item>
-          </Grid>
-        </Grid>
-      </Box>
-      <Box sx={{ flexGrow: 1 }}>
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
           <BottomNavigation
             showLabels
