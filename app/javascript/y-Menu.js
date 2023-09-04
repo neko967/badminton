@@ -7,6 +7,7 @@ import ScoreboardIcon from '@mui/icons-material/Scoreboard';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 import SpeakerNotesOffIcon from '@mui/icons-material/SpeakerNotesOff';
+import PersonIcon from '@mui/icons-material/Person';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -49,7 +50,7 @@ export default function Menu() {
           >
             <BottomNavigationAction label="スコアボード" icon={<ScoreboardIcon />} />
             <BottomNavigationAction label="戦績" icon={<LibraryBooksIcon />} />
-            <BottomNavigationAction label="SpeakerNotes" icon={<SpeakerNotesIcon />} />
+            <BottomNavigationAction label="選手登録" icon={<PersonIcon />} />
           </BottomNavigation>
         </Paper> 
       </Box>
