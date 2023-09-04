@@ -1,18 +1,20 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 
-export default function Court() {
+export default function Score() {
   return (
     <Box
       sx={{
-        width: 450,
-        height: 250,
-        backgroundColor: 'primary.dark',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
+        display: 'flex',
+        '& > :not(style)': {
+          m: 1,
+          width: 500,
+          height: 200,
         },
       }}
-    />
+    >
+      <Paper variant="outlined" />
+    </Box>
   );
 }
