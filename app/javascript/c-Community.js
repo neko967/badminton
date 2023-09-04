@@ -22,17 +22,17 @@ export default function Community() {
       <Depending />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={1}>
-          <Grid xs={2.5}>
-            <Item>xs=2.5</Item>
+          <Grid xs={3}>
+            <Item>xs=3</Item>
           </Grid>
-          <Grid xs={2.5}>
-            <Item>xs=2.5</Item>
+          <Grid xs={3}>
+            <Item>xs=3</Item>
           </Grid>
-          <Grid xs={2.5}>
-            <Item>xs=2.5</Item>
+          <Grid xs={3}>
+            <Item>xs=3</Item>
           </Grid>
-          <Grid xs={2.5}>
-            <Item>xs=2.5</Item>
+          <Grid xs={3}>
+            <Item>xs=3</Item>
           </Grid>
         </Grid>
       </Box>
