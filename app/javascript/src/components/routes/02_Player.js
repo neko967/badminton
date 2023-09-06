@@ -1,24 +1,20 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
-export default function Community() {
+export default function Player() {
 
   return (
     <div>
-      <Depending />
-      <Player />
+      <PlayerDepending />
+      <PlayerName />
     </div>
   );
 }
 
-function Depending() {
+function PlayerDepending() {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -37,7 +33,7 @@ function Depending() {
     </Box>
   );
 }
-function Player() {
+function PlayerName() {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,

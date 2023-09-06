@@ -1,16 +1,16 @@
 import React from 'react'
-import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
 import ScoreboardIcon from '@mui/icons-material/Scoreboard';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
-import SpeakerNotesOffIcon from '@mui/icons-material/SpeakerNotesOff';
-import PersonIcon from '@mui/icons-material/Person';
+import RestoreIcon from '@mui/icons-material/Restore';
+import PeopleIcon from '@mui/icons-material/People';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Menu() {
@@ -24,6 +24,8 @@ export default function Menu() {
 
   const [value, setValue] = React.useState(0);
 
+  const navigate = useNavigate();
+
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
@@ -35,12 +37,14 @@ export default function Menu() {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction label="スコアボード" icon={<ScoreboardIcon />} />
-            <BottomNavigationAction label="戦績" icon={<LibraryBooksIcon />} />
-            <BottomNavigationAction label="選手登録" icon={<PersonIcon />} />
+            <BottomNavigationAction label="スコアボード" icon={<ScoreboardIcon />} onClick={() => navigate('/')}/>
+            <BottomNavigationAction label="戦績" icon={<RestoreIcon />} onClick={() => navigate('/record')}/>
+            <BottomNavigationAction label="選手" icon={<PeopleIcon onClick={() => navigate('/people')}/>} />
+            <BottomNavigationAction label="選手追加" icon={<PersonAddIcon />} />
           </BottomNavigation>
         </Paper> 
       </Box>
     </div>
   );
 }
+

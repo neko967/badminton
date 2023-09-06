@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root "react#hello"
+  root "scoreboard#new"
+  get 'records/index', to: "records#index"
 end
