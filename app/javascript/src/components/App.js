@@ -21,7 +21,6 @@ export default function App() {
             <Route path="/record" element={<Record />} />
             <Route path="/people" element={<People />} />
           </Routes>
-            
           <Menu />
         </Container>
       </React.Fragment>
