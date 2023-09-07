@@ -27,30 +27,30 @@ body {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  line-height: 30px;
-  height: 30px;
+  line-height: 25px;
+  height: 25px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 30px;
+  width: 25px;
 }
 
 .nameSquare {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  line-height: 30px;
-  height: 30px;
+  line-height: 25px;
+  height: 25px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 100px;
+  width: 80px;
 }
 
 .board-row {
