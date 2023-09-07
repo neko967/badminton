@@ -40,7 +40,6 @@ export default function Menu() {
             <BottomNavigationAction label="スコアボード" icon={<ScoreboardIcon />} onClick={() => navigate('/')}/>
             <BottomNavigationAction label="戦績" icon={<RestoreIcon />} onClick={() => navigate('/record')}/>
             <BottomNavigationAction label="選手" icon={<PeopleIcon onClick={() => navigate('/people')}/>} />
-            <BottomNavigationAction label="選手追加" icon={<PersonAddIcon />} />
           </BottomNavigation>
         </Paper> 
       </Box>
