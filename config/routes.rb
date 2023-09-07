@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root "scoreboard#new"
-  get 'records/index', to: "records#index"
+  get 'record', to: "scoreboard#new"
+  get 'people', to: "scoreboard#new"
 end

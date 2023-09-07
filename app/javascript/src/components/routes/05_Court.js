@@ -3,8 +3,6 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 
-import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
 
 export default function Court() {
   return (
@@ -17,13 +15,6 @@ export default function Court() {
             </Paper>
           </Grid>
         </Grid>
-      </Box>
-      
-
-      <Box sx={{ '& > :not(style)': { m: 1 } }}>
-        <Fab color="primary" aria-label="add">
-          <AddIcon />
-        </Fab>
       </Box>
     </div>
   );
