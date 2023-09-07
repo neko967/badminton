@@ -1,3 +1,7 @@
+body {
+    background-color: #dae9f9;
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -17,4 +21,31 @@
   box-shadow: 2px 8px 21px -2px #777777;
   border-radius: 10px;
   background-color: white;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.board-row {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.scoreSheet {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }

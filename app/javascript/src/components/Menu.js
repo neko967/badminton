@@ -28,7 +28,7 @@ export default function Menu() {
 
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} >
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
           <BottomNavigation
             showLabels
