@@ -23,11 +23,11 @@ export default function Court() {
 function LeftCourt() {
   return (
     <div>
-      <Box sx={{ display: 'flex', '& > :not(style)': { m: 0, width: 230, height: 100, }, }} >
+      <Box sx={{ display: 'flex', '& > :not(style)': { m: 0, width: 150, height: 80, }, }} >
         <Paper variant="outlined" square>
         </Paper>
       </Box>
-      <Box sx={{ display: 'flex', '& > :not(style)': { m: 0, width: 230, height: 100, }, }} >
+      <Box sx={{ display: 'flex', '& > :not(style)': { m: 0, width: 150, height: 80, }, }} >
         <Paper variant="outlined" square>
         </Paper>
       </Box>
