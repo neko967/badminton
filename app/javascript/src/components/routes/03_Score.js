@@ -12,7 +12,7 @@ export default function Score() {
         '& > :not(style)': {
           m: 1,
           width: 250,
-          height: 150,
+          height: 170,
         },
       }}
     >

@@ -27,7 +27,7 @@ function PlayerDepending() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid xs={12}>
-          <Item>xs=12</Item>
+          <Item>〇〇高校バドミントン部</Item>
         </Grid>
       </Grid>
     </Box>
@@ -46,16 +46,16 @@ function PlayerName() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid xs={3}>
-          <Item>xs=3</Item>
+          <Item>Player A</Item>
         </Grid>
         <Grid xs={3}>
-          <Item>xs=3</Item>
+          <Item>Player B</Item>
         </Grid>
         <Grid xs={3}>
-          <Item>xs=3</Item>
+          <Item>Player C</Item>
         </Grid>
         <Grid xs={3}>
-          <Item>xs=3</Item>
+          <Item>Player D</Item>
         </Grid>
       </Grid>
     </Box>

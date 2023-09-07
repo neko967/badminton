@@ -18,27 +18,7 @@ export default function Record() {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={1}>
-
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <Item>xs=4 md=6 lg=4</Item>
-          </Grid>
-            
+        <Grid container spacing={1}>    
           <Grid xs={12} md={6} lg={4}>
             <div className="matchCardContainer">
              <MatchRecord></MatchRecord>

@@ -6,9 +6,10 @@ import Grid from '@mui/material/Unstable_Grid2';
 export default function ScoreSheet () {
   return (
     <div className="scoreSheet">
-      <Box sx={{ display: 'fix', flexWrap: 'wrap', '& > :not(style)': { m: 1, width: 1220, height: 118, }, }} >
+      <Box sx={{ display: 'fix', flexWrap: 'wrap', '& > :not(style)': { m: 1, width: 1900, height: 118, }, }} >
         <Paper variant="outlined" square>
         <div className="board-row">
+          <button className="nameSquare">Player A</button>
           <button className="square"></button>
           <button className="square">0</button>
           <button className="square">1</button>
@@ -51,9 +52,29 @@ export default function ScoreSheet () {
           <button className="square">38</button>
           <button className="square">39</button>
           <button className="square">40</button>
+          <button className="square">41</button>
+          <button className="square">42</button>
+          <button className="square">43</button>
+          <button className="square">44</button>
+          <button className="square">45</button>
+          <button className="square">46</button>
+          <button className="square">47</button>
+          <button className="square">48</button>
+          <button className="square">49</button>
+          <button className="square">50</button>
+          <button className="square">51</button>
+          <button className="square">52</button>
+          <button className="square">53</button>
+          <button className="square">54</button>
+          <button className="square">55</button>
+          <button className="square">56</button>
+          <button className="square">57</button>
+          <button className="square">58</button>
+          <button className="square">59</button>
         </div>
         <div className="board-row">
-          <button className="square"></button>
+          <button className="nameSquare">Player B</button>
+          <button className="square">S</button>
           <button className="square">0</button>
           <button className="square">1</button>
           <button className="square">2</button>
@@ -95,9 +116,29 @@ export default function ScoreSheet () {
           <button className="square">38</button>
           <button className="square">39</button>
           <button className="square">40</button>
+          <button className="square">41</button>
+          <button className="square">42</button>
+          <button className="square">43</button>
+          <button className="square">44</button>
+          <button className="square">45</button>
+          <button className="square">46</button>
+          <button className="square">47</button>
+          <button className="square">48</button>
+          <button className="square">49</button>
+          <button className="square">50</button>
+          <button className="square">51</button>
+          <button className="square">52</button>
+          <button className="square">53</button>
+          <button className="square">54</button>
+          <button className="square">55</button>
+          <button className="square">56</button>
+          <button className="square">57</button>
+          <button className="square">58</button>
+          <button className="square">59</button>
         </div>
         <div className="board-row">
-          <button className="square"></button>
+          <button className="nameSquare">Player C</button>
+          <button className="square">R</button>
           <button className="square">0</button>
           <button className="square">1</button>
           <button className="square">2</button>
@@ -139,8 +180,28 @@ export default function ScoreSheet () {
           <button className="square">38</button>
           <button className="square">39</button>
           <button className="square">40</button>
+          <button className="square">41</button>
+          <button className="square">42</button>
+          <button className="square">43</button>
+          <button className="square">44</button>
+          <button className="square">45</button>
+          <button className="square">46</button>
+          <button className="square">47</button>
+          <button className="square">48</button>
+          <button className="square">49</button>
+          <button className="square">50</button>
+          <button className="square">51</button>
+          <button className="square">52</button>
+          <button className="square">53</button>
+          <button className="square">54</button>
+          <button className="square">55</button>
+          <button className="square">56</button>
+          <button className="square">57</button>
+          <button className="square">58</button>
+          <button className="square">59</button>
         </div>
         <div className="board-row">
+          <button className="nameSquare">Player D</button>
           <button className="square"></button>
           <button className="square">0</button>
           <button className="square">1</button>
@@ -183,6 +244,25 @@ export default function ScoreSheet () {
           <button className="square">38</button>
           <button className="square">39</button>
           <button className="square">40</button>
+          <button className="square">41</button>
+          <button className="square">42</button>
+          <button className="square">43</button>
+          <button className="square">44</button>
+          <button className="square">45</button>
+          <button className="square">46</button>
+          <button className="square">47</button>
+          <button className="square">48</button>
+          <button className="square">49</button>
+          <button className="square">50</button>
+          <button className="square">51</button>
+          <button className="square">52</button>
+          <button className="square">53</button>
+          <button className="square">54</button>
+          <button className="square">55</button>
+          <button className="square">56</button>
+          <button className="square">57</button>
+          <button className="square">58</button>
+          <button className="square">59</button>
         </div>
         </Paper>
       </Box>

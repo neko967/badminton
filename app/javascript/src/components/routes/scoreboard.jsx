@@ -11,7 +11,6 @@ function Scoreboard() {
     <div>
       <Player />
       <Score />
-      <Speak />
       <Court />
       <ScoreSheet />
     </div>
