@@ -6,7 +6,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 export default function ScoreSheet () {
   return (
     <div className="scoreSheet">
-      <Box sx={{ display: 'fix', flexWrap: 'wrap', '& > :not(style)': { m: 1, width: 1550, height: 98, }, }} >
+      <Box sx={{ display: 'fix', flexWrap: 'wrap', '& > :not(style)': { m: 1, width: 1800, height: 110, }, }} >
         <Paper variant="outlined" square>
         <div className="board-row">
           <button className="nameSquare">Player A</button>
