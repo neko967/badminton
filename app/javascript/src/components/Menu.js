@@ -9,18 +9,12 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import HomeIcon from '@mui/icons-material/Home';
 
 import { useNavigate } from 'react-router-dom';
 
 
 export default function Menu() {
-  const Item = styled(Paper)(({ theme }) => ({
-      backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-      ...theme.typography.body2,
-      padding: theme.spacing(1),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
-    }));
 
   const [value, setValue] = React.useState(0);
 
@@ -37,9 +31,10 @@ export default function Menu() {
               setValue(newValue);
             }}
           >
-            <BottomNavigationAction label="スコアボード" icon={<ScoreboardIcon />} onClick={() => navigate('/')}/>
-            <BottomNavigationAction label="戦績" icon={<RestoreIcon />} onClick={() => navigate('/record')}/>
-            <BottomNavigationAction label="選手" icon={<PeopleIcon onClick={() => navigate('/people')}/>} />
+            <BottomNavigationAction icon={<HomeIcon />} onClick={() => navigate('/')}/>
+            <BottomNavigationAction icon={<ScoreboardIcon />} onClick={() => navigate('/scoreboard')}/>
+            <BottomNavigationAction icon={<RestoreIcon />} onClick={() => navigate('/record')}/>
+            <BottomNavigationAction icon={<PeopleIcon onClick={() => navigate('/people')}/>} />
           </BottomNavigation>
         </Paper> 
       </Box>

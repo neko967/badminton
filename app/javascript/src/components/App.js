@@ -1,12 +1,12 @@
 import React from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
-import Container from '@mui/material/Container';
 
-import Menu from './Menu.js';
-
+import Header from './Header.js';
+import Home from './routes/home.jsx';
 import Scoreboard from './routes/scoreboard.jsx';
 import Record from './routes/record.jsx';
 import People from './routes/people.jsx';
+import Menu from './Menu.js';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -15,14 +15,14 @@ export default function App() {
     <div className="App">
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="xl">
+        <Header />
           <Routes>
-            <Route path="/" element={<Scoreboard />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/scoreboard" element={<Scoreboard />} />
             <Route path="/record" element={<Record />} />
             <Route path="/people" element={<People />} />
           </Routes>
           <Menu />
-        </Container>
       </React.Fragment>
     </div>
   );

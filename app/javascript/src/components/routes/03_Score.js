@@ -1,24 +1,25 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+
+const StyledPaper = styled(Paper)(({theme}) => ({
+  backgroundColor: 'white',
+  width: '150px',
+  height: '150px',
+  margin: '5px',
+}));
 
 export default function Score() {
+  function handleClick() {
+    console.log('clicked!');
+  }
   return (
     <div>
-    <Box
-      sx={{
-        display: 'flex',
-        '& > :not(style)': {
-          m: 1,
-          width: 250,
-          height: 170,
-        },
-      }}
-    >
-      <Paper variant="outlined">1</Paper>
-      <Paper variant="outlined">1</Paper>
-    </Box>
+      <StyledPaper>1</StyledPaper>
+      <StyledPaper>1</StyledPaper>
+      <Paper onClick={handleClick}>aaa</Paper>
     </div>
   );
 }

@@ -8,7 +8,6 @@ export default function Player() {
 
   return (
     <div>
-      <PlayerDepending />
       <PlayerName />
     </div>
   );
@@ -40,6 +39,7 @@ function PlayerName() {
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    marginTop: 4,
   }));
 
   return (

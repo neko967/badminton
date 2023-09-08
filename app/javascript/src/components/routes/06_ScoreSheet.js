@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import Divider from '@mui/material/Divider';
 
 export default function ScoreSheet () {
   return (
@@ -137,6 +138,7 @@ export default function ScoreSheet () {
           <button className="square">58</button>
           <button className="square">59</button>
         </div>
+        <Divider />
         <div className="board-row">
           <button className="nameSquare">Player C</button>
           <button className="square">R</button>

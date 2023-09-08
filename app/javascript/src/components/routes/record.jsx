@@ -18,91 +18,15 @@ export default function Record() {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={1}>    
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-             <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          <Grid xs={12} md={6} lg={4}>
-            <div className="matchCardContainer">
-            <MatchRecord></MatchRecord>
-            </div>
-          </Grid>
-          
-
-            
-        </Grid>
+        <div className="matchCardContainer">
+          <MatchRecord></MatchRecord>
+        </div>
+        <div className="matchCardContainer">
+          <MatchRecord></MatchRecord>
+        </div>
+        <div className="matchCardContainer">
+          <MatchRecord></MatchRecord>
+        </div>
       </Box>
     </div>
   );
