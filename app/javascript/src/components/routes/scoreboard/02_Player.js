@@ -4,9 +4,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
-import MatchRecord from './MatchRecord.js';
+export default function Player() {
 
-export default function Record() {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -16,18 +15,21 @@ export default function Record() {
   }));
 
   return (
-    <div>
-      <Box sx={{ flexGrow: 1 }}>
-        <div className="matchCardContainer">
-          <MatchRecord></MatchRecord>
-        </div>
-        <div className="matchCardContainer">
-          <MatchRecord></MatchRecord>
-        </div>
-        <div className="matchCardContainer">
-          <MatchRecord></MatchRecord>
-        </div>
-      </Box>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={1}>
+        <Grid xs={3}>
+          <Item>Player A</Item>
+        </Grid>
+        <Grid xs={3}>
+          <Item>Player B</Item>
+        </Grid>
+        <Grid xs={3}>
+          <Item>Player C</Item>
+        </Grid>
+        <Grid xs={3}>
+          <Item>Player D</Item>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }

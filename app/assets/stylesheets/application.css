@@ -30,6 +30,8 @@ body {
 
   height: 750px;
 
+  margin-top: 33px;
+
 }
 
 .matchCardContainer {
@@ -86,8 +88,4 @@ body {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-}
-
-.newGameIcon {
-  background-color: black;
 }

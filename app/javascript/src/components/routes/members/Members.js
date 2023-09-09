@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,6 +9,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+
+import Container from '@mui/material/Container';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -40,31 +44,37 @@ const rows = [
   createData('丸岡花子', 356, 16.0, 49),
 ];
 
+  
+    
+
 export default function Members() {
+
   return (
-    <TableContainer component={Paper}>
-      <Table aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell align="left">名前</StyledTableCell>
-            <StyledTableCell align="left">所属</StyledTableCell>
-            <StyledTableCell align="right">勝率</StyledTableCell>
-            <StyledTableCell align="right">強さ</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                {row.name}
-              </StyledTableCell>
-              <StyledTableCell align="left">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <>
+      <TableContainer component={Paper} sx={{marginTop: {xs:7 ,sm:8}}}>
+        <Table aria-label="customized table">
+          <TableHead>
+            <TableRow>
+              <StyledTableCell align="left">名前</StyledTableCell>
+              <StyledTableCell align="left">所属</StyledTableCell>
+              <StyledTableCell align="right">勝率</StyledTableCell>
+              <StyledTableCell align="right">強さ</StyledTableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <StyledTableRow key={row.name}>
+                <StyledTableCell component="th" scope="row">
+                  {row.name}
+                </StyledTableCell>
+                <StyledTableCell align="left">{row.calories}</StyledTableCell>
+                <StyledTableCell align="right">{row.fat}</StyledTableCell>
+                <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+              </StyledTableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </>
   );
 }
