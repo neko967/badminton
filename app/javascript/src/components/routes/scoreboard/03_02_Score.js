@@ -4,7 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
-export default function Score() {
+export default function LeftScore() {
 
   return (
     <>

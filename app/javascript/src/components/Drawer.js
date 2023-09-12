@@ -66,6 +66,8 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+  const navigate = useNavigate();
+
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -105,16 +107,38 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['ホーム', 'スコアボード', '戦績', 'メンバー'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          <ListItem disablePadding onClick={() => navigate('/')}>
+            <ListItemButton>
+              <ListItemIcon>
+                <HomeIcon />
+              </ListItemIcon>
+              <ListItemText primary='ホーム' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding onClick={() => navigate('/scoreboard')}>
+            <ListItemButton>
+              <ListItemIcon>
+                <ScoreboardIcon />
+              </ListItemIcon>
+              <ListItemText primary='スコアボード' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding onClick={() => navigate('/record')}>
+            <ListItemButton>
+              <ListItemIcon>
+                <RestoreIcon />
+              </ListItemIcon>
+              <ListItemText primary='戦績' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding onClick={() => navigate('/member')}>
+            <ListItemButton>
+              <ListItemIcon>
+                <PeopleIcon />
+              </ListItemIcon>
+              <ListItemText primary='メンバー' />
+            </ListItemButton>
+          </ListItem>
         </List>
         <Divider />
         <List>
